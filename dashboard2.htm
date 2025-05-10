@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת ויזואליזציה - דשבורד 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #182848;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .tableau-container {
+            width: 100%;
+            height: 800px;
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: auto;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #4b6cb7, #182848);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #182848;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .tableau-container {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>דשבורד 2 - מערכת ויזואליזציה לתמחור הזמנות</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>תיאור המערכת</h2>
+            <p>דשבורד זה מציג ניתוח מעמיק של ביצועי תמחור הזמנות, תוך שימוש בנתונים ממקורות מרובים. המערכת מספקת כלים ויזואליים מתקדמים לזיהוי מגמות, ניתוח רווחיות וקבלת החלטות מבוססות נתונים. הדשבורד תוכנן לסייע למנהלים בתהליכי אופטימיזציה של תמחור ושיפור היעילות התפעולית.</p>
+        </section>
+
+        <section>
+            <h2>משמעות הגרף המוצג</h2>
+            <p>הגרף בדשבורד זה מתמקד בניתוח מגמות רווחיות לאורך זמן, תוך הצגת השוואות בין קטגוריות מוצרים ותקופות. הוא מאפשר זיהוי תבניות עונתיות, הערכת ביצועי מוצרים ספציפיים וזיהוי הזדמנויות לשיפור תמחור. הפילטרים האינטראקטיביים מאפשרים התאמה אישית של התצוגה לצרכים ספציפיים של המשתמש.</p>
+            <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz17468952619880' style='position: relative'>
+                    <noscript>
+                        <a href='#'><img alt='Dashboard2' src='https://public.tableau.com/static/images/Da/Dashboards_17468952619880/Dashboard2/1_rss.png' style='border: none' /></a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Dashboards_17468952619880/Dashboard2' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Da/Dashboards_17468952619880/Dashboard2/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='publish' value='yes' />
+                        <param name='redirect' value='auth' />
+                    </object>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <a href="index.htm" class="btn">חזרה למסך הבית</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 כל הזכויות שמורות לדולב, ליאל, אורטל ומעיין</p>
+    </footer>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz17468952619880');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '800px';
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.height = (divElement.offsetWidth / 1.5) + 'px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.height = (divElement.offsetWidth / 1.5) + 'px';
+        } else {
+            vizElement.style.height = '1200px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        document.querySelector('.btn').addEventListener('click', (e) => {
+            e.target.style.opacity = '0.8';
+            setTimeout(() => {
+                e.target.style.opacity = '1';
+            }, 200);
+        });
+    </script>
+</body>
+</html>
